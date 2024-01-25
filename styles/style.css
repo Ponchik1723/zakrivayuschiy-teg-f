@@ -115,7 +115,7 @@
 .theme-menu__button:focus::after {
   width: 100%;
   background-color: var(--main-color);
-  transition: width 300ms, background-color 0.5s;
+  transition: width 300ms, background-color 0.3s;
 }
 
 .header__title {
@@ -192,12 +192,19 @@
 .button-wraper {
   display: flex;
   justify-self: end;
+  align-items: center;
 }
 
 .card__icon-button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.card__icon-button:focus {
+  outline: none;
+  border: 2px solid var(--main-color);
+  transition: border 0.3s ease;
 }
 
 .like-icon {
@@ -226,22 +233,19 @@
   
 }
 
-
-
 .core {
   fill: none;
-
 }
+
 
 .heart:hover .core {
   fill: var(--main-color);
-  transition: fill 0.3s 0.03s ease;
+  transition: fill 0.3, ease;
   
 }
 
 .sparks {
   opacity: 0;
-
 }
 
 .card__like-button {
@@ -249,9 +253,30 @@
   height: 38px;
   border: 2px solid var(--main-color);
   padding: 9px, 17px, 9px, 17px;
-  margin: 25px 25px 25px 0;
+  margin: 25px 25px 25px 12px;
   background-color: transparent;
+  position: relative;
   cursor: pointer;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--main-color);
+  transform-origin: left;
+  transform:scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0px 0px var(--main-color);
+  transition: box-shadow 0.3s;
 }
 
 .button__text {
@@ -263,6 +288,7 @@
   text-align: center;
   color: var(--main-color);
   text-transform:lowercase;
+  mix-blend-mode: difference;
 }
 
 .section__preparation {
