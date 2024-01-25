@@ -197,6 +197,7 @@
 .card__icon-button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .like-icon {
@@ -219,9 +220,23 @@
   fill: none;
 }
 
+.heart:hover .main-body {
+  fill: var(--main-color);
+  transition: fill 0.3s 0.03s;
+  
+}
+
+
+
 .core {
   fill: none;
 
+}
+
+.heart:hover .core {
+  fill: var(--main-color);
+  transition: fill 0.3s 0.03s ease;
+  
 }
 
 .sparks {
@@ -236,6 +251,7 @@
   padding: 9px, 17px, 9px, 17px;
   margin: 25px 25px 25px 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .button__text {
