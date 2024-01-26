@@ -277,6 +277,12 @@
   cursor: pointer;
 }
 
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0px 0px var(--main-color);
+  transition: box-shadow 0.3s;
+}
+
 .button::before {
   content: "";
   position: absolute;
@@ -291,11 +297,6 @@
   transform: scaleX(1);
 }
 
-.button:focus {
-  outline: none;
-  box-shadow: 2px 2px 0px 0px var(--main-color);
-  transition: box-shadow 0.3s;
-}
 
 .button__text {
   font-family: var(--header-fonts);
@@ -304,7 +305,7 @@
   line-height: 13px;
   letter-spacing: 0em;
   text-align: center;
-  color: var(--main-color);
+  color: var(--but-color);
   text-transform:lowercase;
   mix-blend-mode: difference;
 }
