@@ -8,6 +8,7 @@
     --main-color: #00CC14;
     --main-bg-color: #000000;
     --but-color: #00CC14;
+    --dialog-text-color: #00CC14;
     --bg-col-img: repeating-linear-gradient(90deg, #000 0 2px, rgb(0 0 0 / 0) 2px 4px), repeating-linear-gradient(180deg, #000 0 2px,  rgb(0 0 0 / 0) 2px 4px), linear-gradient(180deg, #007f0c 0%, #004306 100%);
 }
 
@@ -16,6 +17,7 @@
         --main-color: #00CC14;
         --main-bg-color: #000000;
         --but-color: #00CC14;
+        --dialog-text-color: #00CC14;
         --bg-col-img: repeating-linear-gradient(90deg, #000 0 2px, rgb(0 0 0 / 0) 2px 4px), repeating-linear-gradient(180deg, #000 0 2px,  rgb(0 0 0 / 0) 2px 4px), linear-gradient(180deg, #007f0c 0%, #004306 100%);
     }
     
@@ -25,6 +27,7 @@
     --main-color: #000000;
     --main-bg-color: #FFFFFF;
     --but-color: #fff;
+    --dialog-text-color: #000000;
     --bg-col-img: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px), repeating-linear-gradient(180deg, #d3d3d3 0 2px,  rgb(211 211 211 / 0) 2px 4px), linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
 }
 
@@ -33,6 +36,7 @@
         --main-color: #000000;
         --main-bg-color: #FFFFFF;
         --but-color: #fff;
+        --dialog-text-color: #000000;
         --bg-col-img: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px), repeating-linear-gradient(180deg, #d3d3d3 0 2px,  rgb(211 211 211 / 0) 2px 4px), linear-gradient(180deg, #e7e7e7 0.01%, #1a1a1a 100%);
     }
     

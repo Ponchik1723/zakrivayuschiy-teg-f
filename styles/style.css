@@ -306,8 +306,9 @@
   letter-spacing: 0em;
   text-align: center;
   color: var(--but-color);
-  text-transform:lowercase;
+  text-transform: capitalize;
   mix-blend-mode: difference;
+
 }
 
 .section__preparation {
@@ -356,20 +357,16 @@
   background-color: var(--main-bg-color);
 }
 
-.floppy-svg {
-  color: var(--but-color);
+.floppy {
+  stroke: var(--but-color);
+  mix-blend-mode: difference;
+  margin-right: 8px;
 }
 
 .dialog_button-open {
   width: 335px;
   height: 51px;
   border: 2px solid var(--main-color);
-  font-family: var(--header-fonts);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 13px;
-  letter-spacing: 0em;
-  text-align: center;
   background-color: transparent;
   position: relative;
 }
@@ -378,30 +375,46 @@
   width: 357px;
   height: 193px;
   border: 2px solid var(--main-color);
-  display: flex;
-  align-items: center;
+  background-color: var(--main-bg-color);
   position: fixed;
   inset: 0;
 }
 
 dialog:not([open]) {
+  display: none;
   pointer-events: none;
   opacity: 0;
 } 
+
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
 
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.3);
   backdrop-filter: blur(7px);
 }
 
+.dialog_block {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  gap: 20px;
+}
+
 .dialog_text {
   font-family: var(--header-fonts);
-  color: var(--but-color);
+  color: var(--dialog-text-color);
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .dialog_button-close {
