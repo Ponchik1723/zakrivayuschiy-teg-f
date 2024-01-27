@@ -346,5 +346,47 @@
 
 .section__here {
   margin-block-start: 52px;
+  margin-block-end: 52px;
+}
 
+.footer {
+  max-width: 335px;
+  margin: auto;
+  margin-block-end: 105px;
+  background-color: var(--main-bg-color);
+}
+
+.floppy-svg {
+  color: var(--main-color);
+}
+
+.dialog_button-open {
+  width: 335px;
+  height: 51px;
+  border: 2px solid var(--main-color);
+  font-family: var(--header-fonts);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: transparent;
+}
+
+.dialog_paragraph {
+  font-family: var(--header-fonts);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.dialog_button-close {
+  width: 293px;
+  height: 38px;
+  padding: 9px, 17px, 9px, 17px;
+  border: 2px solid var(--main-color);
+  gap: 10px;
+  background-color: transparent;
 }
