@@ -128,8 +128,6 @@
   text-align: left;
   color: var(--main-color);
   margin-bottom: 25px;
-  
-
 }
 
 .content {
@@ -155,13 +153,78 @@
   margin: 3px 10px;
 }
 
+.img-card {
+  position: relative;
+}
+
+.card-label {
+  font-family: var(--header-fonts);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  opacity: 0.5px;
+  text-shadow:
+  -1px 0 var(--main-color), 
+  0 1px var(--main-color), 
+  1px 0 var(--main-color), 
+  0 -1px var(--main-color);
+  mix-blend-mode: hard-light;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 2;
+}
+
+@supports((text-stroke: 2px var(--main-color)) or (-webkit-text-stroke: 2px var(--main-color))) {
+  .card-label {
+      -webkit-text-stroke: 2px var(--main-color);
+      -webkit-text-stroke: 2px var(--main-color);
+      -webkit-text-shadow: none;
+  }
+} 
+
 .section__img {
-  width: 696px;
+  width: 694px;
   height: 696px;
   object-fit: cover;
   object-position: center;
   padding: 0;
   margin: 0;
+}
+
+.img_white-filter {
+  filter: brightness(90%);
+  z-index: 1;
+}
+
+.img-grayscale-filter {
+  filter: grayscale(1);
+}
+
+.img-contrast-filter {
+  filter: contrast(100%);
+  z-index: 1;
+} 
+
+
+.img-saturate-filter {
+  filter: grayscale(0.5);
+  z-index: 1;
+}
+
+.img-invert-filter {
+  filter: invert(0.6);
+  z-index: 1;
+}
+
+.img-many-filter {
+  filter: brightness(200%) saturate(60%) hue-rotate(90deg);
+}
+
+.img-blur-filter {
+  filter: blur(0.3rem);
 }
 
 .section__content {
