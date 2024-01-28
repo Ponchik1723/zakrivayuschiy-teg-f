@@ -242,15 +242,15 @@
         type="button" 
         onclick="window['dialog-id'].show()" 
         aria-controls="dialog-id">
-          <svg class="floppy" width="21" height="21" viewBox="0 0 21 21"><use class="floppy" href="#floppy"></svg>
+          <svg class="floppy" width="21" height="21" viewBox="0 0 21 21"><use class="floppy" href="#floppy"></use></svg>
           <span class="button__text">Сохранить на память</span>
         </button>
         <dialog class="dialog" id="dialog-id">
-            <span class="dialog_block">
-            <svg width="53" height="53" viewBox="0 0 21 21"><use class="floppy" href="#floppy"></svg>
+            <div class="dialog_block">
+            <svg width="53" height="53" viewBox="0 0 21 21"><use class="floppy" href="#floppy"></use></svg>
             <p class="dialog_text">Вставьте<br>
               дискету, чтобы продолжить</p>
-            </span>
+            </div>
             <button class="button dialog_button-close" type="button" onclick="window['dialog-id'].close()">
               <span class="button__text">Ok</span>
             </button>
