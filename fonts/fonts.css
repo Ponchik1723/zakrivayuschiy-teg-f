@@ -9,8 +9,15 @@
 @font-face {
     font-family: 'Inter-Variable';
     src: url(./Inter-Variable.woff2) format('woff2');
-    font-weight: 400 785;
+    font-variation-settings: 400 785;
     
+  }
+
+  @supports (font-variation-settings: normal) {
+    body {
+      font-family: Inter-Variable;
+      font-weight: 400 785;
+    }
   }
   
   
