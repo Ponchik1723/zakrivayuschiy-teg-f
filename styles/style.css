@@ -181,7 +181,7 @@
   .card-label {
       -webkit-text-stroke: 2px var(--main-color);
       -webkit-text-stroke: 2px var(--main-color);
-      -webkit-text-shadow: none;
+      text-shadow: none;
   }
 } 
 
@@ -251,11 +251,14 @@
 }
 
 .card__icon-button {
+  display: flex;
+  align-items: center;
   outline: none;
   border: none;
   background-color: transparent;
   cursor: pointer;
   position: relative;
+  padding: 0;
 }
 
 .card__icon-button:focus .like-icon {
