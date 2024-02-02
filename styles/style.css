@@ -13,7 +13,9 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-
+/* * {
+  outline: 2px solid blue;
+} */
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -130,13 +132,16 @@
 }
 
 .content {
-  max-width: 698px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: auto;
   margin-block-start: 102px;
-  
 }
 
 .section {
+  max-width: 698px;
   display: grid;
   border: 2px solid var(--main-color);
   background-color: var(--main-bg-color);
@@ -276,7 +281,7 @@
   cursor: pointer;
 }
 
-.button:focus {
+.button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0px 0px var(--main-color);
   transition: box-shadow 0.3s;
@@ -307,13 +312,18 @@
   mix-blend-mode: difference;
 }
 .block_floppy {
-  width: 21px;
-  height: 21px;
+  width: 1.3125em;
+  height: 1.3125em;
 }
 
 .floppy {
-  fill: var(--but-color);
+  fill: var(--main-bg-color);
   mix-blend-mode: difference;
+}
+
+.flop {
+  width: 40px;
+  height: 40px;
 }
 
 .dialog_button-open {
@@ -365,12 +375,8 @@ dialog::backdrop {
 }
 
 .block_floppy2 {
-  width: 40px;
-  height: 40px;
-}
-
-.floppy-2 {
-  fill: var(--but-color);
+  width: 2.5em;
+  height: 2.5em;
 }
 
 .dialog_text {
