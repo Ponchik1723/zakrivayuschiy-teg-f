@@ -306,6 +306,10 @@
   color: var(--but-color);
   mix-blend-mode: difference;
 }
+.block_floppy {
+  width: 21px;
+  height: 21px;
+}
 
 .floppy {
   fill: var(--but-color);
@@ -319,6 +323,11 @@
   border: 2px solid var(--main-color);
   background-color: var(--main-bg-color);
   position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .dialog {
@@ -350,13 +359,18 @@ dialog::backdrop {
 .dialog_block {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-left: 10px;
   gap: 20px;
 }
 
+.block_floppy2 {
+  width: 40px;
+  height: 40px;
+}
+
 .floppy-2 {
   fill: var(--but-color);
-  mix-blend-mode: difference;
 }
 
 .dialog_text {
