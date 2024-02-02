@@ -24,12 +24,12 @@
   font-variation-settings: var(--main-fonts);
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 102px;
+  padding-top: 100px;
 }
 
 .header {
-  max-width: 696px;
-  min-height: 364px;
+  max-width: 700px;
+  min-height: 368px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: end;
@@ -40,13 +40,14 @@
 }
 
 .theme-menu {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  margin-left: 17px;
 }
 
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 5px;
 }
 
 .theme-menu__item {
@@ -100,13 +101,12 @@
   width: 0%;
   height: 2px;
   background-color: var(--main-color);
-  transition: none;
+  transition: width 300ms, background-color 0.3s;
 }
 
 .theme-menu__button:focus::after {
   width: 100%;
   background-color: var(--main-color);
-  transition: width 300ms, background-color 0.3s;
 }
 
 .header__title {
@@ -127,8 +127,9 @@
   line-height: 23px;
   letter-spacing: 0em;
   text-align: left;
+  text-transform: uppercase;
   color: var(--main-color);
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .content {
@@ -137,7 +138,7 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  margin-block-start: 102px;
+  margin-block-start: 50px;
 }
 
 .section {
@@ -149,8 +150,9 @@
 }
 
 .section__titel {
+  font-family: var(--main-fonts);
   font-size: 18px;
-  font-weight: 785;
+  font-variation-settings: "wgth" 785;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
@@ -239,8 +241,9 @@
 }
 
 .block_paragraph {
+  font-family: var(--main-fonts);
   font-size: 18px;
-  font-weight: 465;
+  font-variation-settings: "wgth" 465;
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
@@ -281,10 +284,14 @@
   cursor: pointer;
 }
 
+.button {
+  transition: box-shadow 0.3s;
+}
+
 .button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0px 0px var(--main-color);
-  transition: box-shadow 0.3s;
+  
 }
 
 .button::before {
@@ -400,8 +407,29 @@ dialog::backdrop {
   background-color: transparent;
 }
 
-@media (width <= 375px) {
+@media (width <= 475px) {
+  .header {
+    max-width: 371px;
+    min-height: 323px
+  }
 
+  .header__title {
+    font-size: 49px;
+    font-weight: 400;
+    line-height: 49px;
+  }
 
+  .header__subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+  }
+
+  .theme-menu__button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+
+  }
 
 }
