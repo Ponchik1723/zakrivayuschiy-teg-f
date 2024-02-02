@@ -12,7 +12,7 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
-.card__icon-button:focus .like-icon {
+.card__icon-button:focus-visible .like-icon {
   outline: 2px solid var(--main-color);
   transition: outline 0.3s ease;
 }
