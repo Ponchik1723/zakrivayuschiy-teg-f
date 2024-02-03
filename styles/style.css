@@ -21,7 +21,7 @@
   min-block-size: 100dvb;
   background-color: var(--main-bg-color);
   background-image: var(--bg-col-img);
-  font-variation-settings: var(--main-fonts);
+  font-variation-settings: 'wght' var(--main-fonts);
   background-size: cover;
   background-attachment: fixed;
   padding-top: 100px;
@@ -159,7 +159,7 @@
 .section__titel {
   font-family: var(--main-fonts);
   font-size: 18px;
-  font-variation-settings: var(--wght-big);
+  font-variation-settings: 'wght' var(--wght-big);
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
@@ -249,7 +249,7 @@
 .block_paragraph {
   font-family: var(--main-fonts);
   font-size: 18px;
-  font-variation-settings: var(--wgth-min);
+  font-variation-settings: 'wght' var(--wgth-min);
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
