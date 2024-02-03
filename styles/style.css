@@ -13,9 +13,9 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 */
-* {
+/* * {
   outline: 2px solid blue;
-}
+} */
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -111,7 +111,7 @@
 
 .header__title {
   font-family: var(--capital-one-fonts);
-  font-size: clamp(3.063rem, 2.697rem + 1.56vw, 4.063rem);
+  font-size: 65px; /*  */
   font-weight: 400;
   line-height: 65px;
   letter-spacing: 0em;
@@ -144,10 +144,9 @@
 
 .section {
   max-width: 700px;
-  /* display: grid; */
-  border: 2px solid var(--main-color);
+  outline: 2px solid var(--main-color);
   background-color: var(--main-bg-color);
-  margin-block-start: 52px;
+  margin-block-start: 50px;
 }
 
 .section__titel {
@@ -162,7 +161,7 @@
 }
 
 .img-card {
-  width: clamp(23.188rem, 11.523rem + 49.77vw, 43.375rem);
+  width: 700px;
   position: relative;
 }
 
@@ -196,7 +195,8 @@
 } 
 
 .section__img {
-  max-width: 694px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   padding: 0;
@@ -254,9 +254,9 @@
 
 .button-wraper {
   display: flex;
-  justify-self: end;
+  justify-content: end;
   align-items: center;
-  gap: 12px;
+  gap: 7px;
   margin: 25px 25px 25px 0;
 }
 
@@ -325,7 +325,7 @@
 }
 
 .floppy {
-  fill: var(--main-bg-color);
+  fill: var(--flop-col);
   mix-blend-mode: difference;
 }
 
@@ -415,7 +415,7 @@ dialog::backdrop {
   }
 
   .header__title {
-    /* font-size: 49px; */
+    font-size: 49px;
     font-weight: 400;
     line-height: 49px;
   }
@@ -436,8 +436,6 @@ dialog::backdrop {
     max-width: 375px;
   }
 
-  .img-card {
-    max-width: 375px;
-  }
+
 
 }

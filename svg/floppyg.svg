@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg">
-<g id="floppy">
+<symbol id="floppy">
 <rect id="Rectangle 18" width="1.61538" height="1.61538" fill="#00CC14"/>
 <rect id="Rectangle 17" y="1.61523" width="1.61538" height="1.61538" fill="#00CC14"/>
 <rect id="Rectangle 19" y="3.23096" width="1.61538" height="1.61538" fill="#00CC14"/>
@@ -80,5 +80,5 @@
 <rect id="Rectangle 50" x="21" y="8.07715" width="1.61538" height="1.61538" transform="rotate(-180 21 8.07715)" fill="#00CC14"/>
 <rect id="Rectangle 51" x="21" y="6.46143" width="1.61538" height="1.61538" transform="rotate(-180 21 6.46143)" fill="#00CC14"/>
 <rect id="Rectangle 52" x="21" y="4.84619" width="1.61538" height="1.61538" transform="rotate(-180 21 4.84619)" fill="#00CC14"/>
-</g>
+</symbol>
 </svg>
