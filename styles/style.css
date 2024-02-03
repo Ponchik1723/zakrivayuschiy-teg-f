@@ -325,7 +325,7 @@
 }
 
 .floppy {
-  fill: var(--but-color);
+  color: var(--flop-col);
   mix-blend-mode: difference;
 }
 
