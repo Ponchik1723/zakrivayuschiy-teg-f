@@ -243,6 +243,7 @@
 .section__content {
   display: grid;
   grid-gap: 25px;
+  margin: 25px 25px 0 25px;
 }
 
 .block_paragraph {
@@ -253,7 +254,6 @@
   letter-spacing: 0em;
   text-align: left;
   color: var(--main-color);
-  margin: 25px 25px 0 25px;
 }
 
 .button-wraper {
