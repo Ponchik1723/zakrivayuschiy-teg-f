@@ -12,10 +12,6 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
-/* 
-.like-icon {
-  
-} */
 
 .like-icon.is-liked .heart {
   animation: scaling 0.3s 0.01s ease-in;
