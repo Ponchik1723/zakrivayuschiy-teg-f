@@ -17,10 +17,6 @@
   transition: outline 0.3s ease;
 }
 
-.card__icon-button:focus-visible .like-icon {
-  outline: 2px solid var(--main-color);
-}
-
 .like-icon.is-liked .heart {
   animation: scaling 0.3s 0.01s ease-in;
   animation-duration: alternate;
