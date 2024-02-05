@@ -282,7 +282,6 @@
 }
 
 .card__icon-button:focus-visible {
-  transition: border 0.3s ease;
   border: 2px solid var(--main-color);
 }
 
@@ -462,5 +461,10 @@ dialog::backdrop {
 
   .card-label {
     right: 15px;
+  }
+
+  .block_floppy {
+    width: 1,75;
+    height: 1,75;
   }
 }
