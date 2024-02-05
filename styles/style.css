@@ -277,17 +277,14 @@
   cursor: pointer;
   position: relative;
   padding: 0;
-  
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
 }
 
-.like-icon {
-  transition: outline 0.3s ease;
+.card__icon-button:focus-visible {
+  transition: border 0.3s ease;
+  border: 2px solid var(--main-color);
 }
-
-.card__icon-button:focus-visible .like-icon {
-  outline: 2px solid var(--main-color);
-}
-
 
 .card__icon-button:focus {
   outline: none;
